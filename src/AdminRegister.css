@@ -1,0 +1,139 @@
+/* General page styling */
+/*body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; 
+  background-color: #f0f2f5;
+}*/
+
+.admin-registration-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.admin-registration-page .reg-top-bar {
+  width: 20%;
+  text-align: right;
+  padding: 20px;
+  margin-right: 950px;
+}
+
+.admin-registration-page .reg-top-bar button{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Styling for the form */
+.admin-registration-page form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+  font-family: 'Merriweather', serif; /* Elegant and readable */
+
+}
+
+.admin-registration-page h2 {
+  font-family: ;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-registration-page label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.admin-registration-page input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Ensures padding does not affect the overall width */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Placeholder styling for better visibility */
+::placeholder {
+  color: #aaa;
+}
+
+.admin-registration-page  button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* A vibrant blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Making the text on the button stand out */
+font-family: 'Roboto', sans-serif;
+}
+
+.admin-registration-page button:hover {
+  background-color: #0056b3; /* A darker shade of blue for hover effect */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Error message styling */
+.error {
+  color: #ff0000; /* Bright red color for errors */
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+
+/* Adjusting the Go to Login button */
+.reg-top-bar button {
+  background-color: #ccc; /* Neutral color */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reg-top-bar button:hover {
+  background-color: #bbb; /* Slightly darker shade on hover */
+}
+
+.support-info {
+  margin-left: 1020px; /* Space from the form or last element */
+  font-family: 'Roboto', sans-serif; /* Consistent with the page's font */
+  margin-top: 20px; /* Space from the form or last element */
+  padding: 15px;
+  text-align: center; /* Center-align the text */
+  background-color: #eef1f5; /* A light background to highlight the section */
+  border-radius: 8px; /* Soften the edges */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+  width: calc(100% - 30px); /* Adjust width as per padding to avoid horizontal scroll */
+  max-width: 300px; /* Match the form width for alignment */
+}
+
+.support-info a {
+  font-weight: 600; /* Make the email link bolder */
+  color: #007bff; /* Use a color that stands out, but is not too harsh */
+  text-decoration: none; /* No underline to keep it clean */
+}
+
+.support-info a:hover, .support-info a:focus {
+  text-decoration: underline; /* Add underline on hover/focus for clarity */
+  color: #0056b3; /* Darker shade on hover/focus for interaction feedback */
+}

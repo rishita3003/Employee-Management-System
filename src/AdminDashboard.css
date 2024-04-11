@@ -1,0 +1,159 @@
+.admin-dashboard {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.admin-header {
+  background-color: #007bff;
+  padding: 1rem;
+  color: white;
+}
+
+.admin-nav h1 {
+  margin: 0;
+  color: #fff;
+  font-family: montserrat;
+  font-size: 30px;
+  margin-right: 550px;
+  font-weight: bold;
+}
+
+.admin-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.admin-nav select,
+.admin-nav button {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #d3d3d3; /* Light grey background */
+  color: #333; /* Dark grey text */
+
+}
+
+.admin-logout-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.admin-nav button:hover,
+.admin-logout-button:hover {
+  opacity: 0.8;
+}
+
+.admin-content {
+  padding: 2rem;
+  background: #f9f9f9;
+  min-height: calc(100vh - 58px); /* Adjust based on header height */
+}
+
+.admin-employee-registration-form,
+.attendance-management,
+.admin-search-and-filter {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+
+
+.admin-employee-registration-form h2,
+.attendance-management h2 {
+  margin-top: 0;
+}
+
+.admin-form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  color: #f44336;
+}
+
+.ant-form-item {
+  margin-bottom: 1rem;
+}
+
+.admin-form-label input,
+.admin-form-label select,
+.admin-form-label .ant-picker {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+.admin-form-label .ant-picker-input > input {
+  padding-left: 11px;
+}
+
+.ant-form-item-control-input-content {
+  display: flex;
+  align-items: center;
+}
+
+button[type="submit"] {
+  background-color: #5cb85c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+.attendance-management {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.attendance-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 30%;
+  align-self: center;
+}
+
+.attendance-form input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  width:100%;
+}
+.attendance-form input[type="date"] {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  width: 100%;
+}
+
+.employee-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employee-list li {
+  background: #e3f2fd;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+}
+

@@ -1,0 +1,61 @@
+/* AboutPage.css and HelpPage.css */
+.about-page, .help-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height:  100vh;
+  font-family: 'Roboto', sans-serif; /* Default font for body text */
+}
+
+.about-header, .help-header {
+  background-color: #f8f9fa; /* Lighter shade for a modern look */
+  color: #2196f3; /* Keeping the original blue color */
+  font-family: 'Merriweather', serif; /* Elegant serif font for headers */
+  width: 100%; /* Full width for a cleaner look */
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  margin-bottom: 10px;
+}
+
+.about-content, .help-content {
+  width: 60%;
+  padding: 20px; /* Added padding for better text readability */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Consistency in design with shadow */
+  background-color: white; /* Background color for content area */
+  border-radius: 8px; /* Soft rounded corners */
+}
+
+.about-section, .help-section, .about-section p, .help-section p {
+  margin-bottom: 2rem;
+  font-size: 18px; /* Slightly reduced for optimal reading */
+  line-height: 1.6; /* Improved line spacing for readability */
+}
+
+.about-footer, .help-footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f9fa; /* Consistent with header background */
+  color: #2196f3;
+  border-top: 1px solid #e0e0e0; /* Separator for visual distinction */
+}
+
+/* Button styles optimized for better visibility and consistency */
+.about-page button, .help-page button {
+  background-color: #2196f3; /* Green background for action buttons */
+  color: white; /* White text for better contrast and visibility */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Cursor change to indicate clickable */
+  font-weight: 500; /* Medium weight for text */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about-page button:hover, .help-page button:hover {
+  background-color: darkblue; /* Darker shade on hover for feedback */
+  color: white;
+  font-weight: bold;
+}

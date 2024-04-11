@@ -1,0 +1,70 @@
+/* Calendar.css */
+
+.calendar-container {
+    width: 900px;
+    /* height: 100vh; */
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+    /* margin-left: 650px; */
+  }
+  
+  .calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-navigation .ant-btn {
+    border-radius: 4px;
+    border-color: #1890ff;
+    background-color: #1890ff;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .calendar-navigation .ant-btn:hover {
+    border-color: #40a9ff;
+    background-color: #40a9ff;
+  }
+  
+  .holiday {
+    background-color: #ff4d4f;
+    color: #ffffff;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .ant-fullcalendar-table {
+    border-collapse: separate;
+
+  }
+  
+  .ant-fullcalendar-date {
+    padding: 8px 0 !important;
+  }
+  
+  .ant-fullcalendar-value {
+    display: block;
+    min-height: 40px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .ant-fullcalendar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ant-picker-calendar .ant-picker-panel .ant-picker-body {
+    padding: 0 10px;
+  }
+  .ant-picker-calendar.ant-picker-calendar-full .ant-picker-calendar-date{
+    height: 58px;
+  }
+  

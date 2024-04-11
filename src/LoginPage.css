@@ -1,0 +1,140 @@
+/* Overall page styling */
+/*body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}*/
+
+/* Header and Footer with blue background */
+.login-header, .login-footer {
+  color: #007bff;
+  padding: 20px;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content {
+  color:#007bff;
+  display: flex;
+  align-items: center; /* Ensure items are vertically centered */
+  width: 100%;
+  justify-content: space-between; /* Adjust based on layout preference */
+  font-family: Raleway;
+  font-size: 20px;
+}
+
+.login-header h1 {
+  margin-left: -720px;
+  font-family: Montserrat;
+  margin-top: 20; /* Remove margin to align properly */
+  padding-right: 0px; /* Add some spacing if needed */
+  flex-grow: 3; /* Allow the title to take up more space if needed */
+  font-size: 45px;
+}
+.login-header nav {
+  display: flex;
+  align-items: center;
+}
+.login-header nav a, .go-home-button {
+  color: #007bff;
+  margin: 0 10px; /* Space out links and button */
+  text-decoration: none;
+  background: none; /* Ensure button has no background */
+  border: none; /* Remove border from button */
+  cursor: pointer; /* Hand cursor on hover */
+  font-family: 'Raleway', sans-serif; /* Specify font for consistency */
+}
+
+.login-header nav a:hover, .go-home-button:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: #007bff;
+  padding: 5px 10px; /* Add padding to button on hover */
+  border-radius: 5px; /* Add rounded corners to button */
+}
+
+/* Adjust button styles to match links */
+.go-home-button {
+  padding: 0; /* Remove padding to align with links */
+  font-size: inherit; /* Match font size with surrounding text */
+}
+
+.login-header nav a {
+  color: #007bff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.login-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Centering login and register containers */
+.login-container, .register-container {
+  background-color: white;
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Merriweather;
+}
+
+/*h1, h2 {
+  margin: 0;
+  padding-bottom: 20px;
+}*/
+
+/* Style for the form and its elements */
+.login-container form h2{
+  font-size: 30px;
+}
+.login-container form div {
+  margin-bottom: 15px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box; /* Makes padding not affect the total width */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Matching the header/footer blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* A darker blue for hover effect */
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff0000;
+  margin-bottom: 15px;
+}
+
+/* Footer styling */
+.login-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

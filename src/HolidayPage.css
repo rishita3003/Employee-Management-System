@@ -1,0 +1,70 @@
+.holiday-detail-container {
+    width: 50%;
+    max-width: 1200px;
+    margin: 40px auto;
+    /* margin-left: 550px; */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    /* height: calc(100vh - 80px); Adjust height to fit within the viewport, assuming 40px margin on top and bottom */
+    /* overflow-y: auto; Add scroll to the y-axis if content overflows */
+  }
+  
+  .holiday-detail-container a {
+    margin-bottom: 20px;
+    align-self: start; /* Align 'Back to Calendar' link to the start of the flex container */
+  }
+  
+  .holiday-detail-container h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .holiday-detail {
+    margin-bottom: 20px;
+    border-left: 4px solid #1890ff;
+    padding: 15px;
+    background-color: #fafafa;
+  }
+  
+  .holiday-detail h2 {
+    margin: 0;
+    color: #333;
+    font-size: 25px;
+  }
+  
+  .holiday-detail p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .holiday-detail p strong {
+    font-weight: bold;
+  }
+  
+  /* Adjustments for smaller screens if needed */
+  @media screen and (max-width: 768px) {
+    .holiday-detail-container {
+      width: 95%;
+      height: calc(100vh - 60px); /* Decrease height to account for smaller vertical space */
+      margin: 30px auto; /* Smaller margin on smaller screens */
+      padding: 10px;
+    }
+  
+    .holiday-detail-container h1 {
+      font-size: 20px;
+    }
+  
+    .holiday-detail h2 {
+      font-size: 18px;
+    }
+  
+    .holiday-detail p {
+      font-size: 14px;
+    }
+  }
+  
