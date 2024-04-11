@@ -48,6 +48,50 @@ Upon successful setup, you can use the application as follows:
 * **Employee Registration**: Admins can register new employees through the Admin Dashboard.
 * **Attendance and Leave Management**: Employees can mark their attendance and apply for leaves through their dashboard.
 
+# Backend Overview
+
+The backend of the Employee Management System is built with Node.js and Express.js, providing a robust API for the frontend React application. It interacts with a MySQL database to manage employee data, authentication, and other functionalities essential to the system. Below are key components of the backend:
+
+# Core Dependencies
+  
+ * ***Express.js:*** Utilized for creating the server and handling API requests.
+ * ***MySQL2:*** Facilitates connection and interaction with the MySQL database.
+ * ***BCrypt:*** Manages password hashing for secure storage and verification.
+ * ***CORS:*** Configured to allow requests from the frontend domain.
+ * ***Express-session:*** Manages user sessions for authentication and state management.
+
+# Key Features
+
+* **Authentication**
+  
+  * ***User Login:*** Validates user credentials and establishes a session. Utilizes BCrypt for password comparison.
+  * ***User Registration:*** Supports registering new users (admin registration demonstrated) with hashed passwords stored in the database.
+
+* **Employee Management**
+* ***Employee Registration:*** Facilitates registering new employees, including details like department, role, and project assignments. Checks for existing roles, departments, and project IDs to ensure data integrity.
+* ***Fetching Employee Info:*** Provides endpoints to fetch detailed information about employees, including department and role names, and associated projects.
+
+* **Project Management**
+* ***Manager and Projects Info:*** Endpoints to fetch manager-specific information and the projects they're overseeing, leveraging session data for authentication and personalized content delivery.
+
+* **Attendance and Leave Management**
+* ***Attendance Recording:*** Implements endpoints to record employee attendance entries and exits. Also, allows applying for leaves and managing leave requests with approval/rejection functionality.
+
+* **Payment Management**
+Records the payment details after confirming the correct payment ID in the backend.
+
+# Database Connection
+Establishes a connection to the MySQL database with configuration details (host, user, password, database).
+
+# Running the Server
+The server listens on a specified port (default is 3002) and logs a message when successfully running.
+
+
+This backend setup ensures that all operations related to employee management, from authentication to project assignments and leave management, are handled efficiently. It lays the foundation for a scalable and secure application capable of supporting various HR functionalities.
+
+For more detailed documentation on the API endpoints and their usage, refer to the in-code comments and Express.js routing setup within the server.js file.
+
+
 # Database Schema Overview
 
 The Employee Management System utilizes a MySQL database to store and manage data efficiently. Below is a summary of the database tables and their respective roles within the system:
@@ -82,10 +126,14 @@ The Employee Management System utilizes a MySQL database to store and manage dat
   * ***Description:*** Defines roles within the organization, including role names and descriptions.
   * ***Columns:*** roleID, roleName, roleDescription.
 
-* **Attendance, Holidays, Leave Requests, and Payments Tables**
-  
-Tables like daily_attendance, holidays, leave_requests, and employee_payments manage daily attendance records, official holidays, leave requests by employees, and payment records respectively.
+* **Attendance, Holidays, Leave Requests, and Payments Tables**  
+ Tables like daily_attendance, holidays, leave_requests, and employee_payments manage  
+ daily attendance records, official holidays, leave requests by employees, and payment 
+ records respectively.
 
+This overview offers a glimpse into the structure and functionality of the database supporting the Employee Management System. Each table plays a critical role in managing different aspects of the system, from user accounts and employee details to projects, departments, and payroll.
+
+For further customization and scaling of the system, understanding this schema is essential for developers looking to add new features or modify existing functionalities.
 
 # React + Vite
 
