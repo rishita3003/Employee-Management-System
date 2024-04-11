@@ -68,14 +68,14 @@ The backend of the Employee Management System is built with Node.js and Express.
   * ***User Registration:*** Supports registering new users (admin registration demonstrated) with hashed passwords stored in the database.
 
 * **Employee Management**
-* ***Employee Registration:*** Facilitates registering new employees, including details like department, role, and project assignments. Checks for existing roles, departments, and project IDs to ensure data integrity.
-* ***Fetching Employee Info:*** Provides endpoints to fetch detailed information about employees, including department and role names, and associated projects.
+    * ***Employee Registration:*** Facilitates registering new employees, including details like department, role, and project assignments. Checks for existing roles, departments, and project IDs to ensure data integrity.
+    * ***Fetching Employee Info:*** Provides endpoints to fetch detailed information about employees, including department and role names, and associated projects.
 
 * **Project Management**
-* ***Manager and Projects Info:*** Endpoints to fetch manager-specific information and the projects they're overseeing, leveraging session data for authentication and personalized content delivery.
+    * ***Manager and Projects Info:*** Endpoints to fetch manager-specific information and the projects they're overseeing, leveraging session data for authentication and personalized content delivery.
 
 * **Attendance and Leave Management**
-* ***Attendance Recording:*** Implements endpoints to record employee attendance entries and exits. Also, allows applying for leaves and managing leave requests with approval/rejection functionality.
+    * ***Attendance Recording:*** Implements endpoints to record employee attendance entries and exits. Also, allows applying for leaves and managing leave requests with approval/rejection functionality.
 
 * **Payment Management**
 Records the payment details after confirming the correct payment ID in the backend.
