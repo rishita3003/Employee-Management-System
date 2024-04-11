@@ -8,11 +8,11 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-#Employee Management System
+# Employee Management System
 
 The Employee Management System is a comprehensive web application designed to streamline the management of employee details, schedules, and administrative processes within an organization. Built with React and Node.js, this system offers a user-friendly interface for both administrators and employees to perform various tasks efficiently.
 
-#Features
+# Features
 
 User Authentication: Secure login and registration mechanisms for administrators and employees.
 Dashboard Views: Separate dashboard views for Admin, Manager, and Employee roles, each providing role-specific functionalities and data displays.
@@ -22,7 +22,7 @@ Project Management: Managers and Admins can create, assign, and track ongoing an
 Leave Management: Employees can apply for leaves, while Admins and Managers can approve or reject leave requests.
 Payment Management: Admins can manage and record payments, including generating payment statuses and histories.
 
-#Setup
+# Setup
 
 To set up the Employee Management System locally, follow these steps:
 
