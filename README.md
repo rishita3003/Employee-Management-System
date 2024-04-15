@@ -14,14 +14,35 @@ The Employee Management System is a comprehensive web application designed to st
 
 # Setup
 
-To set up the Employee Management System locally, follow these steps:
+Follow these steps to set up the Employee Management System on your local machine:
 
-1. Clone the repository to your local machine.
-2. Navigate to the project directory and install the required dependencies using npm install.
-3. Start the development server with ***npm run dev***.
-4. Access the application through *http://localhost:3002* in your browser.
-5. Run the backend **server.js** file by ***node server.js*** command
-6. Make sure you have Node.js and npm installed on your system before proceeding with the setup.
+### Prerequisites
+Ensure you have `Node.js` and `npm` installed on your system. You can download and install them from [Node.js official website](https://nodejs.org/).
+
+### Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+2. **Install dependencies:**
+    ```bash
+    npm install
+
+3. **Start the Development Server:**
+   ```bash
+   npm run dev
+
+4. **Run the Backend Server:**
+   ```bash
+   node server.js
+
+ Make sure to run this command in the root of your project directory to start the backend server.
+
+**Accessing the Application**
+After completing the above steps, open your web browser and visit http://localhost:3002 to start using the Employee Management System.
+
+By following these instructions, you can set up and start using the Employee Management System on your local environment for development and testing purposes.
 
 # Website Pages
 
