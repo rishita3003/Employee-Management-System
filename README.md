@@ -23,7 +23,7 @@ Ensure you have `Node.js` and `npm` installed on your system. You can download a
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/rishita3003/Employee-Management-System.git
    cd your-repository
 2. **Install dependencies:**
     ```bash
